@@ -5,8 +5,8 @@
 	<parent>
 	    <groupId>org.springframework.boot</groupId>
 	    <artifactId>spring-boot-starter-parent</artifactId>
-	    <version>2.5.6-SNAPSHOT</version>
-	    <relativePath>../spring-boot-starter-parent</relativePath>
+	    <version>2.5.15</version>
+	    <relativePath/> <!-- remove relativePath since the parent is in the Maven Central repository -->
 	</parent>
 
 	<groupId>com.javaproject</groupId>
@@ -116,7 +116,4 @@
 </plugin>
 		</plugins>
 	</build>
-
-	
-
 </project>
