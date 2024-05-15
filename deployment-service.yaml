@@ -18,7 +18,13 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 8080 # The port that the container is running on in the
-
+          volumeMounts:
+            - name: boardgame-storage
+              mountPath: /data  # The path in the container where the volume is mounted
+      volumes:
+        - name: boardgame-storage
+          persistentVolumeClaim:
+            claimName: boardgame-pvc
 
 ---
 
